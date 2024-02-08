@@ -31,12 +31,13 @@ def qronline_json_action(json_data):
         #lightdm.login()
         #login_user("ogretmen","ogretmen")
         #os.system("curl -X POST -d 'username=ogretmen&password=ogretmen' http://127.0.0.1:8080")
-        if os.path.exists("/etc/qrpsw"):
-            psw=open("/etc/qrpsw","r").read().strip()
+        #if os.path.exists("/etc/qrpsw"):
+        #    psw=open("/etc/qrpsw","r").read().strip()
         #os.system("/usr/bin/sshlogin ebaqr "+psw)
-        username = username_prepare(name+"-"+surname)
-        create_user(username,userid)
-        os.system("echo '/usr/bin/sshlogin "+username+"-qr "+userid+"' | netcat localhost 7777 &")
+        #username = username_prepare(name+"-"+surname)
+        #create_user(username,userid)
+        #os.system("echo '/usr/bin/sshlogin "+username+"-qr "+userid+"' | netcat localhost 7777 &")
+        os.system("echo 'ebaqronline:"+username+":"+userid+"' | netcat localhost 7777 &")
         
     else:
         q1.refresh()
