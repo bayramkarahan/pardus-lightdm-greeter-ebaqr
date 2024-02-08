@@ -12,7 +12,7 @@ class EbaonlineWidget(Gtk.Box):
         self.__web=WebKit2.WebView()
         self.__web.set_size_request(400,700)
         self.__web2=WebKit2.WebView()
-        self.__web.load_uri("https://giris.eba.gov.tr/EBA_GIRIS/teacherQrcode.jsp")
+        self.__web.load_uri("https://giris.eba.gov.tr/EBA_GIRIS/studentQrcode.jsp")
         self.__web.connect("load-changed",self.__load_event)
         self.__web.set_zoom_level(self.__web.get_zoom_level() - 0.2)
         self.__web2.connect("load-changed",self.__load_event2)
@@ -27,14 +27,14 @@ class EbaonlineWidget(Gtk.Box):
     def refresh(self,widget=None):
         self.__web.get_website_data_manager().clear(WebKit2.WebsiteDataTypes.ALL,0,None,None,None)
         self.show_all()
-        self.__web.load_uri("https://giris.eba.gov.tr/EBA_GIRIS/teacherQrcode.jsp")
+        self.__web.load_uri("https://giris.eba.gov.tr/EBA_GIRIS/studentQrcode.jsp")
 
     def __load_event(self,webkit,event):
         link=webkit.get_uri()
         if "studentQrcode" in link:
             return
         elif "ders.eba.gov.tr" not in link:
-            self.__web.load_uri("https://giris.eba.gov.tr/EBA_GIRIS/teacherQrcode.jsp")
+            self.__web.load_uri("https://giris.eba.gov.tr/EBA_GIRIS/studentQrcode.jsp")
             return
         self.__web2.load_uri("https://uygulama-ebaders.eba.gov.tr/ders/FrontEndService//home/user/getuserinfo")
 
