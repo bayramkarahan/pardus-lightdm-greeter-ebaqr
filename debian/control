@@ -1,0 +1,13 @@
+Source: pardus-lightdm-greeter-eba-online
+Section: misc
+Priority: optional
+Maintainer: Bayram KARAHAN <bayramk@gmail.com>
+Build-Depends: debhelper (>= 10), make
+Standards-Version: 4.3.0
+Homepage: https://www.pardus.org.tr
+
+Package: pardus-lightdm-greeter-eba-online
+Architecture: all
+Depends:gir1.2-webkit2-4.0
+Description: Pardus Greeter QR plugin
+ Pardus greeter qr plugin-eba-online

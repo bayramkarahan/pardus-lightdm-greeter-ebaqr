@@ -1,0 +1,11 @@
+Package: pardus-lightdm-greeter-eba-online
+Version: 1.0
+Architecture: all
+Maintainer: Bayram KARAHAN <bayramk@gmail.com>
+Installed-Size: 18
+Depends: gir1.2-webkit2-4.0
+Section: misc
+Priority: optional
+Homepage: https://www.pardus.org.tr
+Description: Pardus Greeter QR plugin
+ Pardus greeter qr plugin-eba-online
