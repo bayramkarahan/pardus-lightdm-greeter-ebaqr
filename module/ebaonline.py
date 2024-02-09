@@ -43,14 +43,22 @@ def qronline_json_action(json_data):
         q1.refresh()
 
 def username_prepare(u):
-    u = u.lower()
     u = u.replace("ç","c")
     u = u.replace("ı","i")
     u = u.replace("ğ","g")
     u = u.replace("ö","o")
     u = u.replace("ş","s")
     u = u.replace("ü","u")
+    u = u.replace("Ç","c")
+    u = u.replace("I","i")
+    u = u.replace("İ","i")
+    u = u.replace("Ğ","g")
+    u = u.replace("Ö","o")
+    u = u.replace("Ş","s")
+    u = u.replace("Ü","u")
     u = u.replace(" ","-")
+    u = u.lower()
+
     return u
 
 
