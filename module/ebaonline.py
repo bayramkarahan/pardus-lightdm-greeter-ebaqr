@@ -24,7 +24,7 @@ class EbaonlineWidget(Gtk.Box):
         self.__webonline2.connect("load-changed",self.__load_eventonline2)
         self.__webonline.set_sensitive(False)
         self.data_actiononline = None
-        self.loginType="online"
+        self.loginType="ebaqronline"
         
         self.hbox = Gtk.HBox(spacing=6)
  
