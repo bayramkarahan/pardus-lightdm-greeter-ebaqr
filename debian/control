@@ -1,4 +1,4 @@
-Source: pardus-lightdm-greeter-ebaqr-online
+Source: pardus-lightdm-greeter-ebaqr
 Section: misc
 Priority: optional
 Maintainer: Bayram KARAHAN <bayramk@gmail.com>
@@ -6,8 +6,8 @@ Build-Depends: debhelper (>= 10), make
 Standards-Version: 4.3.0
 Homepage: https://www.pardus.org.tr
 
-Package: pardus-lightdm-greeter-ebaqr-online
+Package: pardus-lightdm-greeter-ebaqr
 Architecture: all
 Depends:gir1.2-webkit2-4.0
 Description: Pardus Greeter QR plugin
- Pardus greeter qr plugin-ebaqr-online
+ Pardus greeter qr plugin-ebaqr
