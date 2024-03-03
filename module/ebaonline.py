@@ -24,17 +24,17 @@ class EbaonlineWidget(Gtk.Box):
         self.__webonline2.connect("load-changed",self.__load_eventonline2)
         self.__webonline.set_sensitive(False)
         self.data_actiononline = None
-        self.loginType="ebaqronline"
+        self.loginType="ebaqrebaqr"
         
         self.hbox = Gtk.HBox(spacing=6)
  
-        self.button1 = Gtk.RadioButton.new_with_label_from_widget(None, "Kişiye Özel Giriş")
-        self.button1.connect("toggled", self.on_selectedonline, "1")
+        self.button1 = Gtk.RadioButton.new_with_label_from_widget(None, "Sabit Kullanıcı (ebaqr) Giriş")
+        self.button1.connect("toggled", self.on_selectedebaqr, "1")
         self.hbox.pack_start(self.button1, False, False, 0)
 
         self.button2 = Gtk.RadioButton.new_from_widget(self.button1)
-        self.button2.set_label("Sabit Kullanıcı (ebaqr) Giriş")
-        self.button2.connect("toggled", self.on_selectedebaqr, "2")
+        self.button2.set_label("Kişiye Özel Giriş")
+        self.button2.connect("toggled", self.on_selectedonline, "2")
         self.hbox.pack_start(self.button2, False, False, 0)
         
         self.vbox = Gtk.VBox(spacing=6)
