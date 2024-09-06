@@ -132,7 +132,7 @@ def module_init():
     global q1
     q1 = EbaonlineWidget()
     ebaonlinepopover = Gtk.Popover()
-    q1.set_size_request(300,300)
+    q1.set_size_request(300,500)
     ebaonlinepopover.set_size_request(300,400)
     ebaonlinepopover.add(q1)
     button1 = Gtk.MenuButton(label="EBA-GIRIS", popover=ebaonlinepopover)
