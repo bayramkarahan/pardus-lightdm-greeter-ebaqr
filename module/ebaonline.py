@@ -16,7 +16,7 @@ class EbaonlineWidget(Gtk.Box):
     def __init__(self):
         super().__init__()
         self.__webonline=WebKit2.WebView()
-        self.__webonline.set_size_request(300,250)
+        self.__webonline.set_size_request(300,500)
         self.__webonline2=WebKit2.WebView()
         self.__webonline.load_uri("https://giris.eba.gov.tr/EBA_GIRIS/studentQrcode.jsp")
         self.__webonline.connect("load-changed",self.__load_eventonline)
