@@ -8,6 +8,6 @@ Homepage: https://www.pardus.org.tr
 
 Package: pardus-lightdm-greeter-ebaqr
 Architecture: all
-Depends:gir1.2-webkit2-4.1
+Depends:gir1.2-webkit2-4.0
 Description: Pardus Greeter QR plugin
  Pardus greeter qr plugin-ebaqr
